@@ -26,7 +26,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 740px;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -152,12 +152,12 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  border-bottom: 1px solid $lightGray;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
+  
   @include mobile {
     text-align: center;
   }
@@ -287,3 +287,4 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+@import "csshacks";
