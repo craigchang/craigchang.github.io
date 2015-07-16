@@ -9,8 +9,34 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.categories[0] %}
+  <div class="categories">
+    <p>
+      Posted:
+      <span>
+        {% for category in page.categories %}
+          <a href="#">#{{ category }}</a>
+        {% endfor %}
+      </span>
+    </p>
+  </div>
+  {% endif %}
+
+  {% if page.tags[0] %}
+  <div class="tags">
+    <p>
+      Tagged:
+      <span>
+        {% for tag in page.tags %}
+          <a href="#">#{{ tag }}</a>
+        {% endfor %}
+      </span>
+    </p>
+  </div>
+  {% endif %}
+
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    <p>{{ page.date | date: "%B %e, %Y" }}</p>
   </div>
 
   {% include disqus.html %}

@@ -1,20 +1,21 @@
 ---
-layout: default
+layout: main
 ---
-
-<p style="font-style:italic;">Site Still Under Construction!</p>
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+    <article class="post" data-url="{{ site.baseurl }}{{ post.url }}">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ post.excerpt }}
+        <p>{{ post.excerpt | remove: '<p>' | remove: '. </p>' }}... </p>
+        <p>Posted: {{ post.date | date: "%B %e, %Y" }}</p>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
     </article>
+
+    
   {% endfor %}
 </div>

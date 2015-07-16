@@ -32,15 +32,19 @@
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
+
       </div>
     </div>
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-
+    
     {% include footer.html %}
     {% include analytics.html %}
-      
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="{{ site.baseurl }}/js/index.js"></script>
   </body>
 </html>
