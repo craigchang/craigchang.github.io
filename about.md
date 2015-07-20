@@ -16,4 +16,5 @@ Currently, Craig is located in the Bay Area.
 
 ## Contact
 
-Email: [craigchang@gmail.com](mailto:craigchang@gmail.com)
+Email: [craigchang@gmail.com](mailto:craigchang@gmail.com)<br>
+Linkedin: [https://www.linkedin.com/in/craigchang](https://www.linkedin.com/in/craigchang)

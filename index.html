@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: default
 ---
 
 <div class="posts">
@@ -9,7 +9,7 @@ layout: main
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        <p>{{ post.excerpt | remove: '<p>' | remove: '. </p>' }}... </p>
+        <p>{{ post.excerpt | remove: '<p>' | remove: '.</p>' }}... </p>
         <p>Posted: {{ post.date | date: "%B %e, %Y" }}</p>
       </div>
 

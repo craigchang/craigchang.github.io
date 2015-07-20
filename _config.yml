@@ -2,12 +2,12 @@
 name: Craig Chang
 
 # Short bio or description
-description: Software Developer
+description: Software Engineer
 
 # Avatar/Pic Url
 avatar: /images/craigme.jpg
 
-# Includes an icon in the footer for each username you enter
+# Footer links and icons
 footer-links:
   dribbble:
   email: craigchang@gmail.com
@@ -33,7 +33,7 @@ google_analytics: UA-34153747-1
 
 # Your website URL (e.g. http://craigchang.github.io or http://www.craigchang.me)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://craigchang.me
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -42,12 +42,12 @@ url:
 baseurl:
 
 markdown: redcarpet
-highlighter: pygments
+#highlighter: pygments
 permalink: /:title/
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # :compressed or :expanded
+  style: :compressed # :compressed or :expanded
 
 # Jekyll plug-ins
 gems:
