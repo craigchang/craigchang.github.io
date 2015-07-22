@@ -2,7 +2,7 @@
 name: Craig Chang
 
 # Short bio or description
-description: Software Engineer
+description:
 
 # Avatar/Pic Url
 avatar: /images/craigme.jpg
@@ -48,7 +48,6 @@ permalink: /:title/
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :compressed # :compressed or :expanded
-
 # Jekyll plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem

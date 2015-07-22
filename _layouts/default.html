@@ -10,6 +10,7 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/font-awesome/font-awesome.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   </head>
 
@@ -24,11 +25,25 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/projects">Projects</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
+          <!-- <div class="menu-toggle">
+             <i class="fa fa-bars fa-2x"></i> -->
+          <div class="menu-desktop">
+             <nav>
+              <a href="{{ site.baseurl }}/">Blog</a>
+              <a href="{{ site.baseurl }}/projects">Projects</a>
+              <a href="{{ site.baseurl }}/about">About</a>
+            </nav>
+          </div>
+
+          <div class="menu-mobile">
+            <i class="fa fa-bars fa-2x"></i> 
+            <nav>
+              <a href="{{ site.baseurl }}/">Blog</a>
+              <a href="{{ site.baseurl }}/projects">Projects</a>
+              <a href="{{ site.baseurl }}/about">About</a>
+            </nav>
+          </div>
+          <!-- </div> -->
         </header>
       </div>
     </div>
