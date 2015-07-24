@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "font-awesome";
 
 // Syntax highlighting @import is at the bottom of this file
 
@@ -93,7 +94,6 @@ a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
-  //transition: all .3s ease 0s;
   &:hover, &:active {
     text-decoration: underline;
   }
@@ -176,6 +176,8 @@ img {
   margin-bottom: 50px;
   border-bottom: 1px solid #ddd;
   background-color: #eee;
+  //background: url('/images/Beach.jpg') no-repeat center center;
+  //background-size: cover;
 
   @include mobile {
     margin-top: 40px;
@@ -184,23 +186,15 @@ img {
 
 .masthead {
   padding: 20px 0;
-  
-  //@include mobile {
-    text-align: center;
-  //}
+  text-align: center;
 }
 
 .site-avatar {
-  float: left;
+  float: none;
   width: 100px;
   height: 100px;
-  margin-right: 15px;
-
-  //@include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  //}
+  display: block;
+  margin: 0 auto;
 
   img {
     border-radius: 5px;
@@ -208,13 +202,9 @@ img {
 }
 
 .site-info {
-  float: left;
-
-  //@include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  //}
+  float: none;
+  display: block;
+  margin: 0 auto;
 }
 
 .site-name {
@@ -251,7 +241,6 @@ img {
 }
 
 .menu-mobile {
-  //background-color: white;
   background-color: rgba(255,255,255,0.7);
   display: none;
   text-align: right;
@@ -280,7 +269,6 @@ img {
 nav {
   float: none;
   //margin-top: 9px; // @TODO: Vertically middle align
-  //font-family: $helveticaNeue;
   font-size: 24px;
   display: block;
 
@@ -420,3 +408,4 @@ footer a i {
 @import "highlights";
 @import "svg-icons";
 @import "csshacks";
+@import "print";

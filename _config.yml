@@ -5,7 +5,7 @@ name: Craig Chang
 description:
 
 # Avatar/Pic Url
-avatar: /images/craigme.jpg
+avatar: /images/craig_me.jpg
 
 # Footer links and icons
 footer-links:
@@ -55,3 +55,5 @@ gems:
 exclude:
     - CNAME*
     - README*
+    - node_modules/
+    - etach/
