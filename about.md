@@ -8,7 +8,7 @@ keywords: Craig, Chang, software, developer, engineer, Ellie Mae Inc., uc davis,
 
 ## Bio
 
-![Craig Bio Picture](/images/craig_bio.jpg "Craig Bio Picture")
+![Craig Bio Picture](/images/craig-bio.jpg "Craig Bio Picture")
 
 Craig Chang is currenlty a software developer at [Ellie Mae Inc.](http://www.elliemae.com) in Pleasanton, California.
 

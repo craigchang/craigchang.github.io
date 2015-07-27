@@ -5,7 +5,7 @@ name: Craig Chang
 description:
 
 # Avatar/Pic Url
-avatar: /images/craig_me.jpg
+avatar: /images/craig-me.jpg
 
 # Footer links and icons
 footer-links:
@@ -57,3 +57,5 @@ exclude:
     - README*
     - node_modules/
     - etach/
+    - Gruntfile.js
+    - package.json

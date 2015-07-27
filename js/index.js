@@ -12,8 +12,18 @@
 
 	// Toggle Menu in Masthead - mobile view
 	function clickMenuToggle() {
-		$('div.menu-mobile > i.fa-bars').click(function(e) {
-			$('div.menu-mobile nav').slideToggle();
+		$('div.navbar-header > i.fa-bars').click(function(e) {
+			//$('div.navbar-menu').toggleClass('navbar-expand', 500);
+			$('div.navbar-menu').slideToggle(function() {
+				if($(this).is(':visible')) {
+					$(this).addClass('navbar-expand');
+				} else {
+					$(this).removeClass('navbar-expand');
+				}
+
+				// remove the style attribute, only want sliding animation
+				$(this).removeAttr('style');
+			});
 		});
 	}
 })(jQuery);
