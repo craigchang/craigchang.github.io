@@ -10,7 +10,7 @@ keywords: Craig, Chang, software, developer, engineer, Workday Inc., uc davis, a
 
 ![Craig Bio Picture](/images/craig-bio.jpg "Craig Bio Picture")
 
-Craig Chang is currenlty a software developer at [Workday Inc.](http://www.workday.com) in Pleasanton, California.
+Craig Chang is currenlty a software engineer at [Workday Inc.](http://www.workday.com) in Pleasanton, California.
 
 Craig received his Bachelor's Degree in Computer Engineering at the University of California, Davis. Since graduating in 2012, Craig has been employed full-time in the Bay Area, working with companies that specialize in web and enterprise application development.
 

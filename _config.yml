@@ -41,7 +41,7 @@ url: http://craigchang.me
 # then add in the baseurl here, like this: "/repository-name"
 baseurl:
 
-markdown: redcarpet
+markdown: kramdown
 #highlighter: pygments
 permalink: /:title/
 
