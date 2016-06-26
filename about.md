@@ -2,19 +2,19 @@
 layout: page
 title: About
 permalink: /about/
-excerpt: Craig Chang is currenlty a software developer at Ellie Mae Inc. in Pleasanton, California. Craig received his Bachelor's Degree in Computer Engineering at the University of California, Davis.
-keywords: Craig, Chang, software, developer, engineer, Ellie Mae Inc., uc davis, about, web, enterprise, email, linkedin, github
+excerpt: Craig Chang is currently a software engineer at Workday Inc. in Pleasanton, California. Craig received his Bachelor's Degree in Computer Engineering at the University of California, Davis.
+keywords: Craig, Chang, software, developer, engineer, Workday Inc., uc davis, about, web, enterprise, email, linkedin, github
 ---
 
 ## Bio
 
 ![Craig Bio Picture](/images/craig-bio.jpg "Craig Bio Picture")
 
-Craig Chang is currenlty a software developer at [Ellie Mae Inc.](http://www.elliemae.com) in Pleasanton, California.
+Craig Chang is currenlty a software developer at [Workday Inc.](http://www.workday.com) in Pleasanton, California.
 
 Craig received his Bachelor's Degree in Computer Engineering at the University of California, Davis. Since graduating in 2012, Craig has been employed full-time in the Bay Area, working with companies that specialize in web and enterprise application development.
 
-In his spare time, he enjoys sports (swimming, basketball, tennis) and gaming.
+In his spare time, he enjoys playing sports (swimming, basketball, tennis) and gaming.
 
 ## Contact
 
