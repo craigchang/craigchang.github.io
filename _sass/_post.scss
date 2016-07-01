@@ -1,0 +1,60 @@
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.posts > .post:hover {
+  color: rgba(0,0,0,0.6);
+  cursor: pointer;
+  transition: all .3s ease 0s;
+
+  a {
+    color: #4183C4;
+    transition: all .3s ease 0s;
+  }
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  // the title of post
+  h1 {
+    border-bottom: 5px solid $lavender;
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  // tags
+  .tags, .categories {
+    p {
+      margin: 0;
+    }
+
+    a {
+      text-transform: capitalize;
+    }
+  }
+}

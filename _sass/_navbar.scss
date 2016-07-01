@@ -1,0 +1,92 @@
+nav.navbar {
+  background-color: #eee;
+  -webkit-box-shadow: 0 1px 19px 1px #888888;
+  box-shadow: 0 1px 19px 1px #888888;
+  display: block;
+  float: none;
+  font-size: 24px;
+  position: relative;
+
+  div.navbar-header {
+    float: left;
+    padding: 15px 30px 15px 0;
+
+    a {
+      color: $black;
+      cursor: pointer;
+      letter-spacing: 1px;
+      margin-left: 0;
+      text-align: left;
+      text-decoration: none;
+
+      img {
+        width: 35px;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+    }
+
+    a.base-url {
+      font-size: 20px;
+    }
+
+    i.fa-bars {
+      display: none;
+      cursor: pointer;
+    }
+
+    @include mobile {
+      width: 100%;
+      padding-right: 0;
+
+      a {
+        float: left;
+      }
+
+      i.fa-bars {
+        display: block;
+        float: right;
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  div.navbar-menu {
+    display: block;
+    float: left;
+    padding: 15px 15px 15px 0;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        float: left;
+
+        a {
+          color: $black;
+          font-size: 20px;
+          padding-right: 30px;
+        }
+      }
+    }
+
+    @include mobile {
+      &.navbar-expand {
+        display: block;
+      }
+
+      display: none;
+      padding: 0;
+
+      ul {
+        li {
+          float: none;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
