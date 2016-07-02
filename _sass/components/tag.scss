@@ -1,0 +1,28 @@
+// tags
+.tags, .categories {
+  p {
+    margin: 0;
+  }
+
+  a.tag-link {
+    text-transform: capitalize;
+    border-radius: 4px;
+    background: rgba(181,181,232, .2);
+    padding: 4px;
+    //color: #B5B5E8; 
+    webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  a.tag-link:hover {
+    background: rgba(181,181,232, 1);
+    color: white;
+
+    i.fa {
+      color: white;
+    }
+  }
+}

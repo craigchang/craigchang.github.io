@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Up and running with Jekyll!
-categories: Software
-tags: Jekyll, GitHub
+tags: [Jekyll, GitHub]
 keywords: jekyll, static, site, generator, blog, content, website, github, github pages, disqus
 ---
 

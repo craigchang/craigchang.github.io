@@ -25,18 +25,19 @@ layout: default
   {% if page.tags[0] %}
   <div class="tags">
     <p>
-      Tagged:
-      <span>
-        {% for tag in page.tags %}
-          <a href="#">#{{ tag }}</a>
-        {% endfor %}
-      </span>
+      {% for tag in page.tags %}
+        <span>
+          <a class="tag-link" href="/tags/#{{tag}}">
+            <i class="fa fa-tag"></i> {{ tag }}
+          </a>
+        </span>
+      {% endfor %}
     </p>
   </div>
   {% endif %}
 
   <div class="date">
-    <p>{{ page.date | date: "%B %e, %Y" }}</p>
+    <p><i class="fa fa-calendar"></i> {{ page.date | date: "%B %e, %Y" }}</p>
   </div>
 
   {% include disqus.html %}
