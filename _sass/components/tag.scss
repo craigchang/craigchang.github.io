@@ -20,9 +20,12 @@
   a.tag-link:hover {
     background: rgba(181,181,232, 1);
     color: white;
-
+    
     i.fa {
       color: white;
+      webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
     }
   }
 }

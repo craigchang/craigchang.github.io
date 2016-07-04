@@ -37,7 +37,7 @@ Retrieve all posts related to a specific tag.
 	<h2 id="{{tag}}">{{tag}}</h2>
 	{% for post in site.posts %}
 		{% if post.tags contains tag %}
-			<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+			<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} ({{ post.date | date: "%B %e, %Y" }})</a></p>
 		{% endif %}
 	{% endfor %}
 {% endfor %}
