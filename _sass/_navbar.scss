@@ -7,6 +7,17 @@ nav.navbar {
   font-size: 24px;
   position: relative;
 
+  .container {
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 0 20px;
+    width: 100%;
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
   div.navbar-header {
     float: left;
     padding: 15px 30px 15px 0;
@@ -37,7 +48,8 @@ nav.navbar {
 
     @include mobile {
       width: 100%;
-      padding-right: 0;
+      padding-right: 20px;
+      padding-left: 20px;
 
       a {
         float: left;
@@ -46,7 +58,7 @@ nav.navbar {
       i.fa-bars {
         display: block;
         float: right;
-        margin-top: 8px;
+        margin-top: 4px;
         vertical-align: middle;
       }
     }
@@ -70,6 +82,12 @@ nav.navbar {
           font-size: 20px;
           padding-right: 30px;
         }
+
+        a:hover {
+          background-color: $purple;
+          color: $white;
+          text-decoration: none;
+        }
       }
     }
 
@@ -80,11 +98,15 @@ nav.navbar {
 
       display: none;
       padding: 0;
+      width: 100%;
 
       ul {
         li {
           float: none;
-          margin-bottom: 15px;
+          a {
+            display: block;
+            padding: 10px 20px;
+          }
         }
       }
     }
