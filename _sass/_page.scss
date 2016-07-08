@@ -6,10 +6,8 @@
   &.about {
     img {
       max-width: 320px;
-    }
 
-    @include mobile {
-      img {
+      @include mobile {
         display: block;
         margin: 0 auto;
         max-width: 240px;
