@@ -60,6 +60,9 @@ h1 {
 
 h2 {
   font-size: 30px;
+  a {
+    color: inherit;
+  }
 
   @include mobile {
     font-size: 24px;

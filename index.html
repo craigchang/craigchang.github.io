@@ -1,18 +1,20 @@
 ---
 layout: default
+title: Blog
 excerpt: Craig is an experienced software engineer who specializes in web and enterprise application development using the latest UI and Java Technology.
 keywords: jekyll, static, site, generator, blog, content, website, github, github pages, disqus
 ---
+<h1>Blog</h1>
 
 <div class="posts">
   {% for post in site.posts %}
     <article class="post" data-url="{{ site.baseurl }}{{ post.url }}">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
         <p>{{ post.excerpt | remove: '<p>' | remove: '.</p>' }}... </p>
-        <p>Posted: {{ post.date | date: "%B %e, %Y" }}</p>
+        <p><i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}</p>
       </div>
 
       <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->

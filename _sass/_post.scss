@@ -38,8 +38,16 @@
     font-size: 15px;
   }
 
-  // the title of post
   h1 {
+    border-bottom: 5px solid $lavender;
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  // title of a post
+  h2 {
     border-bottom: 5px solid $lavender;
 
     a:hover {
