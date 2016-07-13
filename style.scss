@@ -28,7 +28,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 880px;
+  max-width: 1080px;
   padding: 0 20px;
   width: 100%;
 }
@@ -173,6 +173,7 @@ img {
 @import "page";
 @import "navbar";
 @import "components/tag";
+@import "components/search-bar";
 @import "footer";
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

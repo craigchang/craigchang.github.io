@@ -9,11 +9,11 @@ nav.navbar {
 
   .container {
     margin: 0 auto;
-    max-width: 880px;
+    max-width: 1080px;
     padding: 0 20px;
     width: 100%;
 
-    @include mobile {
+    @include tablet {
       padding: 0;
     }
   }
@@ -46,7 +46,7 @@ nav.navbar {
       cursor: pointer;
     }
 
-    @include mobile {
+    @include tablet {
       width: 100%;
       padding-right: 20px;
       padding-left: 20px;
@@ -85,7 +85,7 @@ nav.navbar {
       }
     }
 
-    @include mobile {
+    @include tablet {
       &.navbar-expand {
         display: block;
       }
@@ -109,6 +109,16 @@ nav.navbar {
           }
         }
       }
+    }
+  }
+
+  div.navbar-search {
+    display: block;
+    float: right;
+    padding: 15px 0px 15px 15px;
+
+    @include tablet {
+      display: none;
     }
   }
 }

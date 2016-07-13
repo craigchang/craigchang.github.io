@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
     {% include meta.html %}
 
@@ -28,6 +28,13 @@
             <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
             <li><a href="{{ site.baseurl }}/about">About</a></li>
           </ul>
+        </div>
+        <div class="navbar-search">
+          <form class="search-form" action="/search/index.html" method="get">
+            <label for="search-box"></label>
+            <input type="text" id="search-box" name="query">
+            <button type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
