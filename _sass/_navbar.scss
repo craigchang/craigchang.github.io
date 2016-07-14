@@ -9,7 +9,7 @@ nav.navbar {
 
   .container {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 1024px;
     padding: 0 20px;
     width: 100%;
 
@@ -66,7 +66,6 @@ nav.navbar {
 
   div.navbar-menu {
     display: block;
-    float: left;
     padding: 15px 15px 15px 0;
 
     ul {
@@ -76,16 +75,30 @@ nav.navbar {
 
       li {
         float: left;
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
 
         a {
           color: $black;
           font-size: 20px;
-          padding-right: 30px;
         }
       }
     }
 
+    div.navbar-items {
+      float: left;
+
+      @include tablet {
+        float: none;
+      }
+    }
+
     @include tablet {
+      float:left;
+
       &.navbar-expand {
         display: block;
       }
@@ -97,6 +110,7 @@ nav.navbar {
       ul {
         li {
           float: none;
+
           a {
             display: block;
             padding: 10px 20px;
@@ -115,10 +129,10 @@ nav.navbar {
   div.navbar-search {
     display: block;
     float: right;
-    padding: 15px 0px 15px 15px;
 
     @include tablet {
-      display: none;
+      float: none;
+      padding: 10px 20px;
     }
   }
 }

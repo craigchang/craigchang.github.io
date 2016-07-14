@@ -23,18 +23,16 @@
           <i class="fa fa-bars"></i>
         </div>
         <div class="navbar-menu">
-          <ul>
-            <li><a href="{{ site.baseurl }}/">Blog</a></li>
-            <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
-            <li><a href="{{ site.baseurl }}/about">About</a></li>
-          </ul>
-        </div>
-        <div class="navbar-search">
-          <form class="search-form" action="/search/index.html" method="get">
-            <label for="search-box"></label>
-            <input type="text" id="search-box" name="query"/>
-            <button type="submit">Search</button>  
-          </form>
+          <div class="navbar-items">
+            <ul>
+              <li><a href="{{ site.baseurl }}/">Blog</a></li>
+              <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+              <li><a href="{{ site.baseurl }}/about">About</a></li>
+            </ul>
+          </div>
+          <div class="navbar-search">
+            {% include search-bar.html %}
+          </div>
         </div>
       </div>
     </nav>

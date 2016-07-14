@@ -1,3 +1,11 @@
+li.search-bar-mobile {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
 form.search-form {
   margin-bottom: 0;
 
@@ -15,6 +23,11 @@ form.search-form {
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px;
+
+    @include tablet {
+      padding-right: 84px;
+      width: 100%;
+    }
   }
 
   button[type=submit] {
@@ -43,7 +56,12 @@ form.search-form {
     &:hover {
       background-color: $blue-hover;
     }
+
+    @include tablet {
+      position: relative;
+      float: right;
+      top: -34px;
+      right: -1px;
+    }
   }
-
-
 }
