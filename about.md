@@ -18,6 +18,6 @@ In his spare time, he enjoys playing sports (swimming, basketball, tennis) and g
 
 ## Contact
 
-<i class="fa fa-envelope-o" style="width: 20px;" title="Email"></i> [craigchang@gmail.com](mailto:craigchang@gmail.com)<br>
+<i class="fa fa-envelope-o" style="width: 20px;" title="Email"></i> [craig.h.chang@gmail.com](mailto:craig.h.chang@gmail.com)<br>
 <i class="fa fa-linkedin-square" style="width: 19px; margin-left:1px;" title="Linkedin"></i> [www.linkedin.com/in/craigchang](https://www.linkedin.com/in/craigchang)<br>
 <i class="fa fa-github-square" style="width: 19px; margin-left:1px;" title="GitHub"></i> [www.github.com/craigchang](https://www.github.com/craigchang)
