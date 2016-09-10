@@ -20,14 +20,16 @@ title: Search
       },
     {% endfor %}
     {% for page in site.pages %}
-      "{{ page.url | slugify }}": {
-        "title": "{{ page.title | xml_escape }}",
-        "author": "{{ page.author | xml_escape }}",
-        "category": "{{ page.category | xml_escape }}",
-        "content": {{ page.content | strip_html | strip_newlines | jsonify }},
-        "url": "{{ page.url | xml_escape }}"
-      }
-      {% unless forloop.last %},{% endunless %}
+      //{{page.url}}
+      {% unless page.url contains "404" or page.url contains "search" or page.url contains "feed.xml" or page.url contains "tags" or page.url contains "style.css" %}
+        "{{ page.url | slugify }}": {
+          "title": "{{ page.title | xml_escape }}",
+          "author": "{{ page.author | xml_escape }}",
+          "category": "{{ page.category | xml_escape }}",
+          "content": {{ page.content | strip_html | strip_newlines | jsonify }},
+          "url": "{{ page.url | xml_escape }}"
+        }{% unless forloop.last %},{% endunless %}
+      {% endunless %}
     {% endfor %}
   };
 </script>
