@@ -31,7 +31,7 @@ disqus:
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-34153747-1
 
-# Your website URL (e.g. http://craigchang.github.io or http://www.craigchang.me)
+# Your website URL (e.g. http://craigchang.github.io)
 # Used for Sitemap.xml and your RSS feed
 url: http://craigchang.github.io
 

@@ -1,25 +1,36 @@
 ---
 layout: default
-title: Blog
-excerpt: Craig is an experienced software engineer who specializes in web and enterprise application development using the latest UI and Java Technology.
-keywords: jekyll, static, site, generator, blog, content, website, github, github pages, disqus
+title: About
+excerpt: Craig Chang is currently a software engineer at Workday Inc. in Pleasanton, California. Craig received his Bachelor's Degree in Computer Engineering at the University of California, Davis.
+keywords: Craig, Chang, software, developer, engineer, Workday Inc., uc davis, about, web, enterprise, email, linkedin, github
 ---
-<h1>Blog</h1>
+ 
+<div class="craig-bio-content">
+  <p><img class="craig-bio-img" src="/images/craig-bio.jpg" alt="Craig Bio Picture" title="Craig Bio Picture"/>
+  
+  <p>Hey guys! Craig here, and welcome!</p>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post" data-url="{{ site.baseurl }}{{ post.url }}">
-      
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+  <h2>So uhh...what do you do?</h2>
+  <p>I've been a full-time software engineer in the Bay Area, working with companies that specialize in enterprise application development. Career-wise, I'm interested in anything technical, and am always exploring different sectors of the tech industry.</p>
 
-      <div class="entry">
-        <p>{{ post.excerpt | remove: '<p>' | remove: '.</p>' }}... </p>
-        <p><i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}</p>
-      </div>
+  <h2>Ok, so where do you work?</h2>
+  <p>I currently work at <a href="http://www.workday.com">Workday Inc.</a>, developing the latest Enterprise Resource Planning (ERP) software.</p>
 
-      <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
-    </article>
+  <h2>What school did you attend?</h2>
+  <p>I went to the University of California, Davis and graduated with a Bachelor's Degree in Computer Engineering.</p>
 
-    
-  {% endfor %}
+  <h2>Any hobbies or interests in your spare time?</h2>
+  <p>Love to hike, play sports (swimming, basketball, tennis, you name it) and occasionally play <a href="http://www.craigchang.me/unplayed">videogames</a>.</p>
+
+  <h2>How do I contact you?</h2>
+  <p>It's easy, just follow me on social media.</p>
+
+  <i class="fa fa-linkedin-square" style="width: 19px; margin-left:1px;" title="Linkedin"></i>
+  <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">Linkedin</a>
+  <br/>
+  <i class="fa fa-github-square" style="width: 19px; margin-left:1px;" title="GitHub"></i>
+  <a href="https://www.github.com/{{ site.footer-links.github }}">Github</a>
+  <br/>
+  <i class="fa fa-user" style="width: 19px; margin-left:1px;" title="Personal"></i>
+  <a href="http://www.craigchang.me">Personal Website</a>
 </div>
