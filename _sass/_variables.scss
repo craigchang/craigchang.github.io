@@ -20,6 +20,7 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$robotoSlab: 'Roboto Slab', georgia, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
@@ -31,5 +32,11 @@ $georgia: Georgia, serif;
 @mixin tablet {
   @media screen and (max-width: 880px) {
   	@content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 881px) {
+    @content;
   }
 }

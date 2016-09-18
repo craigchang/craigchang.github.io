@@ -22,7 +22,8 @@ html {
 
 body {
 	background: $lightGray;
-  font: 300 16px/1.625 $helveticaNeue;
+  //font: 300 16px/1.625 $helveticaNeue;
+  font: 300 16px/1.625 $robotoSlab;
   color: $darkGray;
 }
 
@@ -36,22 +37,19 @@ body {
 .inner-container {
   background: $white;
   padding: 70px 80px;
-}
 
-@include tablet {
-  .inner-container {
+  @include tablet {
     padding: 40px 50px;
   }
-}
 
-@include mobile {
-  .inner-container {
+  @include mobile {
     padding: 15px;
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  //font-family: $helveticaNeue;
+  font-family: $robotoSlab;
   color: $darkerGray;
   font-weight: bold;
 
@@ -209,16 +207,31 @@ img.craig-bio-img {
   }
 }
 
-@import "post";
-@import "page";
-@import "navbar";
-@import "components/tag";
-@import "components/search-bar";
-@import "footer";
+header#header {
+  margin: 20px 0;
+
+  @include desktop {
+    margin-left: 80px;
+  }
+
+  @include tablet {
+    margin-left: 50px;
+  }
+
+  @include mobile {
+    margin-left: 15px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "components/tag";
+@import "components/search-bar";
+@import "footer";
 @import "highlights";
 @import "svg-icons";
-@import "csshacks";
 @import "print";
