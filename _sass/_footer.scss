@@ -3,10 +3,7 @@
   // border-top: 1px solid #ddd;
   // border-bottom: 1px solid #ddd;
   // background-color: $lightGray;
-}
-
-@include mobile {
-  .wrapper-footer {
+  @include mobile {
     margin: 0 15px;
   }
 }
