@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Portfolio
 excerpt: Throughout his software engineering career, Craig has continued to expand his portfolio with diverse projects that show his skills and versatility as an engineer.
 keywords: projects, natcar, design, project, uc davis, algorithm, autonomous, racecar, sensor, software 
 ---
