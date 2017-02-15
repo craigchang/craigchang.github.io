@@ -17,3 +17,14 @@
     }
   }
 }
+
+.page.projects {
+  h2 ~ div, 
+  h2 ~ p > :not(a) {
+    display: none;
+  }
+
+  h2 ~ p > a {
+    display: inline;
+  }
+}
