@@ -188,8 +188,8 @@ img {
 /*********************/
 
 img.craig-bio-img {
-  float: left;
-  margin: 0 20px 0 0;
+  float: right;
+  margin: 0 0 0 20px;
   max-width: 330px;
   width: 50%;
   height: auto;
@@ -227,10 +227,138 @@ header#header {
   }
 }
 
+header#header .heading-container {
+  float: left;
+
+  @include tablet {
+    float: none;
+    padding: 20px 0;
+  }
+}
+
+header#header .heading-container h1 {
+  float: left;
+}
+
+header#header .heading-container h1 a {
+  text-decoration: none;
+}
+
+header#header .heading-container i.nav-toggle {
+  display: none;
+  float: right;
+  line-height: 1.7;
+  cursor: pointer;
+
+  @include desktop {
+    margin-right: 80px;
+  }
+
+  @include tablet {
+    margin-right: 50px;
+    display: block;
+    font-size: 2em;
+  }
+
+  @include mobile {
+    margin-right: 15px;
+    font-size: 1.5em;
+  }
+}
+
+header#header .nav-container {
+  float: right;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  @include desktop {
+    margin-right: 80px;
+  }
+
+  @include tablet {
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: none;
+  }
+
+  @include mobile {
+    margin-right: 15px;
+  }
+}
+
+header#header .nav-container nav {
+  @include tablet {
+    display: none;
+  }
+}
+
+header#header .nav-container nav.navbar-expand {
+  display: block;
+}
+
+header#header .nav-container nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include tablet {
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 20px;
+  }
+
+  li {
+    float: left;
+
+    @include tablet {
+      float: none;
+      border-color: rgba( 51, 51, 51, 0.2);
+      border-top: 1px solid #bbb;
+    }
+
+    a {
+      color: $darkerGray;
+      padding: 1em;
+
+      @include tablet {
+        display: block;
+        padding: 0.84375em 0;
+        text-decoration: none;
+
+        &:hover {
+          color: $blue-hover;
+        }
+      }
+    }
+  }
+}
+
+header#header .nav-container nav ul li.search-bar-mobile {
+  display: none;
+  padding: 0.84375em 0;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+input#toggle-input[type=checkbox] {
+  position: absolute;
+  left: -999em;
+}
+
+input#toggle-input[type=checkbox] + nav {
+}
+
+input#toggle-input[type=checkbox]:checked + nav {
+  display: block;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "components/tag";
-@import "components/search-bar";
+@import "csshacks";
+@import "page";
 @import "footer";
 @import "highlights";
 @import "svg-icons";
