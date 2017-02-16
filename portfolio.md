@@ -5,8 +5,9 @@ excerpt: Throughout his software engineering career, Craig has continued to expa
 keywords: projects, natcar, design, project, uc davis, algorithm, autonomous, racecar, sensor, software 
 ---
 
-<a class="show-more-toggle" href="https://www.youtube.com/watch?v=0bBvv3uwCsM" target="_blank">NATCAR Design Project (Video)</a>
+[NATCAR Design Project](./natcar) - Constructed an autonomous race car that could navigate a through preset track in the shortest time possible
 
-<a class="show-more-toggle" href="http://www.arthurtimberly.com/" target="_blank">Arthur + Timberly</a>
+[Arthur + Timberly](http://www.arthurtimberly.com/){: target="_blank" } - Fluid, responsive wedding website using Parallax Scrolling effects
+
 
 
