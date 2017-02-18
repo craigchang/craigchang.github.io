@@ -215,11 +215,11 @@ header#header {
   }
 
   @include tablet {
-    margin: 20px 50px;
+    margin: 0px 50px;
   }
 
   @include mobile {
-    margin: 20px 15px;
+    margin: 0px 15px;
   }
 
   a {
@@ -298,6 +298,11 @@ header#header .nav-container nav ul {
 
   @include tablet {
     border-bottom: 1px solid #bbb;
+    margin-bottom: 30px;
+  }
+
+  @include mobile {
+    border-bottom: 1px solid #bbb;
     margin-bottom: 20px;
   }
 
@@ -338,7 +343,9 @@ header#header .nav-container nav ul li.search-bar-mobile {
 
 input#toggle-input[type=checkbox] {
   position: absolute;
-  left: -999em;
+  right: -999999em;
+  top: -999999em;
+  visibility: 0;
 }
 
 input#toggle-input[type=checkbox] + nav {
