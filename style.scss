@@ -192,6 +192,14 @@ img.right {
   margin: 0 0 0 20px;
   max-width: 250px;
   height: auto;
+
+  @include mobile {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    float: none;
+    width: 100%;
+  }
 }
 
 img.left {
@@ -199,6 +207,15 @@ img.left {
   margin: 0 20px 0 0;
   max-width: 250px;
   height: auto;
+
+  @include mobile {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    float: none;
+    width: 100%;
+
+  }
 }
 
 img.craig-bio-img {
