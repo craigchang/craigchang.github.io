@@ -8,6 +8,3 @@ keywords: projects, natcar, design, project, uc davis, algorithm, autonomous, ra
 [NATCAR Design Project](./natcar) - Constructed an autonomous race car that could navigate a through preset track in the shortest time possible
 
 [Arthur + Timberly](http://www.arthurtimberly.com/){: target="_blank" } - Fluid, responsive wedding website using Parallax Scrolling effects
-
-
-
