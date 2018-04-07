@@ -29,6 +29,9 @@ Love to hike, play sports (swimming, basketball, tennis), and am an avid [gamer]
 
 It's easy, just follow me on social media.
 
+<i class="fa fa-google-plus-square" style="width: 19px; margin-left:1px;" title="GooglePlus"></i>
+<a href="https://plus.google.com/{{ site.footer-links.googleplus }}">GooglePlus</a>
+<br/>
 <i class="fa fa-linkedin-square" style="width: 19px; margin-left:1px;" title="Linkedin"></i>
 <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">Linkedin</a>
 <br/>
