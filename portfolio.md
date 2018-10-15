@@ -5,8 +5,10 @@ excerpt: Throughout his software engineering career, Craig has continued to expa
 keywords: projects, natcar, design, project, uc davis, algorithm, autonomous, racecar, sensor, software 
 ---
 
-[NATCAR Design Project](./natcar) - Constructed an autonomous race car that could navigate a through preset track in the shortest time possible
+[NATCAR Design Project](./natcar) - Constructed an autonomous race car that could navigate a through preset track in the shortest time possible.
 
-[Arthur + Timberly](https://agile-hollows-93588.herokuapp.com/){: target="_blank" } - Fluid, responsive wedding website using Parallax Scrolling effects
+[Arthur + Timberly](https://agile-hollows-93588.herokuapp.com/){: target="_blank" } - Fluid, responsive wedding website using Parallax Scrolling effects.
 
-[Slatepedia](https://infinite-lake-72555.herokuapp.com/){: target="_blank" } - Online Encyclopedia of complete gaming content found in The Legend of Zelda: Breath of the Wild.
+[Slatepedia](https://slatepedia.herokuapp.com/) - Online Encyclopedia of complete gaming content found in The Legend of Zelda: Breath of the Wild. 
+
+[Unplayed](https://craigchang.me/unplayed) - A slighty enhanced version of Shaun Inman's [Unplayed App](https://shauninman.com/unplayed/) that includes search and filter functionalities.
