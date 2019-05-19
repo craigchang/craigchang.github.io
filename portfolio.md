@@ -11,4 +11,4 @@ keywords: projects, natcar, design, project, uc davis, algorithm, autonomous, ra
 
 [Slatepedia](https://slatepedia.herokuapp.com/) - Online Encyclopedia of complete gaming content found in The Legend of Zelda: Breath of the Wild. 
 
-[Unplayed](https://craigchang.me/unplayed) - A slighty enhanced version of Shaun Inman's [Unplayed App](https://shauninman.com/unplayed/) that includes search and filter functionalities.
+[Unplayed](https://unplayed-app.herokuapp.com/) - A slighty enhanced version of Shaun Inman's [Unplayed App](https://shauninman.com/unplayed/) that includes search and filter functionalities.
