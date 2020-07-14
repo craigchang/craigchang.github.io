@@ -6,6 +6,8 @@ _site/
 etach/
 _drafts/
 _posts/
+.jekyll-cache/
+.jekyll-metadata
 
 ### Node ###
 # Logs
@@ -42,3 +44,4 @@ dist/
 
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
+
