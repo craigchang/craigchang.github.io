@@ -9,25 +9,44 @@ keywords: Craig, Chang, software, developer, engineer, Workday Inc., uc davis, a
 
 Hi, I'm Craig and welcome to my site!
 
-**What do you do?**
+I'm a full-time software engineer in the Bay Area with a deep focus on large-scale enterprise software. I’m also a tech generalist at heart, always exploring different corners of the industry and looking for the next technical puzzle to solve. If it’s innovative and impactful, I want to know how it works.
 
-I am a full-time software engineer in the Bay Area working with companies that specialize in enterprise application software. Career-wise, I'm interested in anything technical, and am always exploring different sectors of the tech industry.
 
-**What school did you attend?**
+## Skills
 
-I went to the University of California, Davis and graduated with a Bachelor's Degree in Computer Engineering.
+<div class="skills-section">
+  <ul class="skills-list">
+    <li class="skill-item">
+      <div class="skill-icon skill-icon--java" role="img" aria-label="Java"></div>
+      <span class="skill-name">Java</span>
+    </li>
+    <li class="skill-item">
+      <div class="svg-icon python skill-icon skill-icon--python" role="img" aria-label="Python"></div>
+      <span class="skill-name">Python</span>
+    </li>
+    <li class="skill-item">
+      <div class="skill-icon skill-icon--javascript" role="img" aria-label="JavaScript"></div>
+      <span class="skill-name">JavaScript</span>
+    </li>
+    <li class="skill-item">
+      <div class="skill-icon skill-icon--react" role="img" aria-label="React"></div>
+      <span class="skill-name">React</span>
+    </li>
+    <li class="skill-item">
+      <div class="skill-icon skill-icon--typescript" role="img" aria-label="TypeScript"></div>
+      <span class="skill-name">TypeScript</span>
+    </li>
+  </ul>
+</div>
 
-**Any hobbies or interests?**
+## Beyond the Code
+🏔️ **Hiking** — Exploring the Bay Area trails
 
-Love to hike, play sports (swimming, basketball, tennis), and am an avid [gamer](https://unplayed-app.herokuapp.com){: target="_blank" }.
+🏀 **Sports** — Basketball, Swimming, Tennis
 
-**How do I contact you?**
+🎮 **Gaming** - RPGs and Strategy games
 
-It's easy, just follow me on social media.
-
-<!-- <i class="fa fa-google-plus-square" style="width: 19px; margin-left:1px;" title="GooglePlus"></i>
-<a href="https://plus.google.com/{{ site.footer-links.googleplus }}">GooglePlus</a>
-<br/> -->
+## Social Media
 <i class="fa fa-linkedin-square" style="width: 19px; margin-left:1px;" title="Linkedin"></i>
 <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">Linkedin</a>
 <br/>

@@ -45,3 +45,5 @@ dist/
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
 
+# do not include the Jekyll setup guide in the repo
+JEKYLL_SETUP.md

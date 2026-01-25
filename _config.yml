@@ -50,7 +50,7 @@ sass:
   style: :compressed # :compressed or :expanded
 
 # Jekyll plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 exclude:
@@ -58,5 +58,5 @@ exclude:
     - README*
     - node_modules/
     - etach/
-    - Gruntfile.js
+    - Gruntfile.js  # Kept for reference only (Grunt is deprecated)
     - package.json

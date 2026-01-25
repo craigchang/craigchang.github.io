@@ -1,0 +1,73 @@
+//
+// LAYOUT COMPONENTS
+//
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.inner-container {
+  background: $white;
+  padding: 70px 80px;
+
+  @include tablet {
+    padding: 40px 50px;
+  }
+
+  @include mobile {
+    padding: 15px;
+  }
+}
+
+img.right {
+  float: right;
+  margin: 0 0 0 20px;
+  max-width: 250px;
+  height: auto;
+
+  @include mobile {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    float: none;
+    width: 100%;
+  }
+}
+
+img.left {
+  float: left;
+  margin: 0 20px 0 0;
+  max-width: 250px;
+  height: auto;
+
+  @include mobile {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    float: none;
+    width: 100%;
+  }
+}
+
+img.craig-bio-img {
+  float: right;
+  margin: 0 0 0 20px;
+  max-width: 330px;
+  width: 50%;
+  height: auto;
+}
+
+@include mobile {
+  img.craig-bio-img {
+    margin: 0;
+    float: none;
+    width: 100%;
+
+    & {
+      text-align: center;
+    }
+  }
+}
