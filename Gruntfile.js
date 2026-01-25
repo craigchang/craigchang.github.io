@@ -1,3 +1,17 @@
+/**
+ * DEPRECATED: This Gruntfile.js is kept for reference only.
+ * 
+ * Grunt has been deprecated from this project. All Grunt dependencies
+ * have been removed from package.json. This file is maintained as a
+ * reference for historical purposes and to document the previous build
+ * configuration.
+ * 
+ * To serve the site locally, use:
+ *   bundle exec jekyll serve
+ * 
+ * To build the site, use:
+ *   bundle exec jekyll build
+ */
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -6,13 +20,13 @@ module.exports = function(grunt) {
     outDir: '_site',
     shell: {
       jekyllBuild: {
-        command: 'jekyll build'
+        command: 'bundle exec jekyll build'
       },
       jekyllServe: {
-        command: 'jekyll serve'
+        command: 'bundle exec jekyll serve'
       },
       jekyllServeLocalhost: {
-        command: 'jekyll serve -H 0.0.0.0'
+        command: 'bundle exec jekyll serve -H 0.0.0.0'
       }
     },
     htmlmin: {

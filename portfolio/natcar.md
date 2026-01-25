@@ -1,14 +1,14 @@
 ---
 layout: page
-title: NATCAR
+title: NATCAR Design Project
 ---
-
-## NATCAR Design Project
 
 <!-- youtube iframe -->
 <div class="iframe-resp-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/0bBvv3uwCsM" frameborder="0" allowfullscreen></iframe>
 </div>
+
+### Overview
 
 The objective of the [NATCAR design project](http://www.ece.ucdavis.edu/natcar/) is to design and construct an autonomous race car that could navigate a preset track in the shortest time possible. The track is marked by 1-inch-wide reflective white tape on dark and non-reflective carpet. I collaborated in a team of 3 to produce an optimally fast and precise racecar. Several areas of development and construction include speed control circuits, track sensing circuits, and a steering control feedback loop, which were all implemented in both hardware and software.
 

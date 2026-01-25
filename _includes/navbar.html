@@ -1,14 +1,14 @@
 <header id="header" class="clearfix">
   <div class="heading-container clearfix">
-    <h1><a href="{{ site.baseurl }}/">craigchang.github.io</a></h1>
+    <h1 class="site-title"><a href="{{ site.baseurl }}/">craigchang.github.io</a></h1>
     <label for="toggle-input"><i class="fa fa-bars nav-toggle"></i></label>
   </div>
   <div class="nav-container">
     <!-- <input type="checkbox" name="toggle-input" id="toggle-input"> -->
     <nav>
       <ul class="clearfix">
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/">About</a></li>
+        <li{% if page.url contains '/portfolio/' or page.url contains '/portfolio' %} class="active"{% endif %}><a href="/portfolio">Portfolio</a></li>
+        <li{% if page.url == '/' or page.url == '/index.html' %} class="active"{% endif %}><a href="/">About</a></li>
       </ul>
     </nav>
   </div>
