@@ -2,13 +2,19 @@
 // SKILLS SECTION
 //
 
+.skills-intro {
+  color: $gray;
+  font-size: 0.95em;
+  margin: -0.5em 0 1em;
+}
+
 .skills-section {
   margin: 2em 0;
   
   .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5em;
+    gap: 1.25em;
     list-style: none;
     padding: 0;
     margin: 1em 0;
@@ -22,21 +28,27 @@
     display: flex;
     align-items: center;
     gap: 0.75em;
-    padding: 0.75em 1.25em;
+    padding: 0.75em 1.25em 0.75em 1em;
     background: $white;
     border: 1px solid $lightGray;
     border-radius: 8px;
-    transition: all 0.2s ease;
+    border-left: 3px solid $blue;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     
     &:hover {
       transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-color: $blue;
+      box-shadow: 0 6px 12px rgba(65, 131, 196, 0.12);
+      border-left-color: $blue;
+      border-color: rgba(65, 131, 196, 0.25);
     }
     
+    // Alternate accent colors (odd: blue, even: lavender)
+    &:nth-child(odd) { border-left-color: $blue; }
+    &:nth-child(even) { border-left-color: darken($lavender, 8%); }
+    
     @include mobile {
-      padding: 0.6em 1em;
+      padding: 0.6em 1em 0.6em 0.85em;
       font-size: 0.9em;
     }
   }
@@ -59,7 +71,7 @@
   }
   
   .skill-name {
-    font-weight: 500;
+    font-weight: 600;
     color: $darkerGray;
     white-space: nowrap;
   }

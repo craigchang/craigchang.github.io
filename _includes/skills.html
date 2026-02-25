@@ -1,0 +1,18 @@
+{% comment %}
+  Renders each skill in the skills section. Uses site.data.skills for the list.
+  Usage: {% include skills.html %}
+  Optional params:
+    intro="Your text" — override default intro, or intro="" to hide
+{% endcomment %}
+
+{% if include.intro != "" %}
+{{ include.intro | default: "Languages and tools I work with most. Always adding more." }}
+{% endif %}
+
+<div class="skills-section">
+  <ul class="skills-list">
+    {% for skill in site.data.skills %}
+      {% include skill.html %}
+    {% endfor %}
+  </ul>
+</div>
