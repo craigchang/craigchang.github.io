@@ -1,0 +1,73 @@
+//
+// BEYOND THE CODE SECTION (hobbies / interests)
+//
+
+.beyond-intro {
+  color: $gray;
+  font-size: 0.95em;
+  margin: -0.5em 0 1em;
+}
+
+.beyond-section {
+  margin: 2em 0;
+}
+
+.beyond-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
+
+.beyond-card {
+  background: $white;
+  border: 1px solid $lightGray;
+  border-radius: 10px;
+  padding: 1.25em 1.35em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(181, 181, 232, 0.2);
+    border-color: rgba(181, 181, 232, 0.5);
+  }
+}
+
+.beyond-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba($lavender, 0.25), rgba($blue, 0.12));
+  color: $blue;
+  font-size: 1.25rem;
+  margin-bottom: 0.75em;
+
+  .fa {
+    font-size: 1.25em;
+  }
+}
+
+.beyond-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0 0 0.35em;
+  color: $darkerGray;
+}
+
+.beyond-desc {
+  font-size: 0.9em;
+  color: $gray;
+  line-height: 1.45;
+  margin: 0;
+}

@@ -1,0 +1,22 @@
+{% comment %}
+  Renders the "Beyond the Code" section. Uses site.data.beyond for the list.
+  Usage: {% include beyond.html %}
+  Optional params:
+    intro="Your text" — override default intro, or intro="" to hide
+{% endcomment %}
+
+{% if include.intro != "" %}
+{{ include.intro | default: "When I'm not at the keyboard, you'll find me here." }}
+{% endif %}
+
+<div class="beyond-section">
+  <div class="beyond-grid">
+    {% for item in site.data.beyond %}
+      <div class="beyond-card">
+        <span class="beyond-icon" aria-hidden="true"><i class="fa {{ item.icon }}"></i></span>
+        <h3 class="beyond-title">{{ item.title }}</h3>
+        <p class="beyond-desc">{{ item.desc }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,13 @@
+# Hobbies / interests for the "Beyond the Code" section. Edit here; the include renders them.
+# icon: Font Awesome class (e.g. fa-tree). Omit the "fa " prefix if you like—include adds it.
+# title: card heading
+# desc: short description
+- icon: fa-tree
+  title: Hiking
+  desc: Exploring Bay Area trails and getting outside.
+- icon: fa-futbol-o
+  title: Sports
+  desc: Basketball, swimming, tennis — anything that gets me moving.
+- icon: fa-gamepad
+  title: Gaming
+  desc: RPGs and strategy games when I need to unwind.

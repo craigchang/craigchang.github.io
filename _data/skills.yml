@@ -1,0 +1,13 @@
+# Skills shown on the About page. Add/remove/edit here; the include renders them.
+# id: used for CSS class (skill-icon--<id>). Must match a class in _sass/_svg-icons.scss.
+# name: display label
+- id: java
+  name: Java
+- id: python
+  name: Python
+- id: javascript
+  name: JavaScript
+- id: react
+  name: React
+- id: typescript
+  name: TypeScript
