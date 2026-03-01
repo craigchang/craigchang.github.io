@@ -1,0 +1,27 @@
+{% comment %}
+  Renders skill pills for portfolio projects.
+  Usage: {% include skill-pills.html skills="JavaScript,iOS,Scriptable" skill_links="Scriptable|https://scriptable.app/" %}
+  Params:
+    skills — comma-separated list of pill labels (required)
+    skill_links — optional; format "Name|url,Name2|url2" for pills that link
+{% endcomment %}
+{% assign pill_list = include.skills | split: "," %}
+{% assign link_pairs = include.skill_links | default: "" | split: "," %}
+<p>
+{% for pill in pill_list %}
+    {% assign label = pill | strip %}
+    {% assign found_url = false %}
+    {% for pair in link_pairs %}
+      {% assign kv = pair | split: "|" %}
+      {% assign key = kv[0] | strip %}
+      {% if key == label %}
+  <span class="skill-pill"><span class="skill-pill-name"><a href="{{ kv[1] | strip }}" target="_blank" rel="noopener">{{ label }}</a></span></span>
+        {% assign found_url = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% unless found_url %}
+  <span class="skill-pill"><span class="skill-pill-name">{{ label }}</span></span>
+    {% endunless %}
+{% endfor %}
+</p>

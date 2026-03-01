@@ -1,0 +1,13 @@
+{% comment %}
+  Renders a new line.
+  Usage: {% include newline.html %}
+  Optional params:
+    style="CSS styling"
+{% endcomment %}
+{% if include.clear == "left" %}
+<p style="clear: left" ></p>
+{% elsif include.clear == "right" %}
+<p style="clear: right" ></p>
+{% else %}
+<p style="clear: both" ></p>
+{% endif %}

@@ -29,3 +29,15 @@
     }
   }
 }
+
+// Project tech badges (portfolio): same pill style as tags, not links
+.project-tech {
+  display: inline-block;
+  text-transform: capitalize;
+  border-radius: 4px;
+  background: rgba(181, 181, 232, 0.2);
+  padding: 2px 8px;
+  margin: 0 4px 0 0;
+  font-size: 0.85em;
+  font-weight: 500;
+}

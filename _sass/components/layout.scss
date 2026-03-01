@@ -24,13 +24,13 @@
 
 img.right {
   float: right;
-  margin: 0 0 0 20px;
+  margin: 0 0 1em 1em;
   max-width: 250px;
   height: auto;
 
   @include mobile {
     display: block;
-    margin: 20px auto;
+    margin: 1em auto;
     max-width: 200px;
     float: none;
     width: 100%;
@@ -39,13 +39,13 @@ img.right {
 
 img.left {
   float: left;
-  margin: 0 20px 0 0;
+  margin: 0 1em 1em 0;
   max-width: 250px;
   height: auto;
 
   @include mobile {
     display: block;
-    margin: 20px auto;
+    margin: 1em auto;
     max-width: 200px;
     float: none;
     width: 100%;
@@ -54,7 +54,7 @@ img.left {
 
 img.craig-bio-img {
   float: right;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 1em;
   max-width: 330px;
   width: 50%;
   height: auto;
@@ -62,7 +62,8 @@ img.craig-bio-img {
 
 @include mobile {
   img.craig-bio-img {
-    margin: 0;
+    display: block;
+    margin: 0 auto;
     float: none;
     width: 100%;
 

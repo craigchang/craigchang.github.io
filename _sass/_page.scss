@@ -1,7 +1,25 @@
 .page {
   h2 {
-    border-bottom: 5px solid $lavender;
+    position: relative;
+    border-bottom: 5px solid $blue;
     margin: 1em 0 15px;
+
+    .h2-anchor {
+      display: inline-block;
+      margin-left: 0.5em;
+      color: $gray;
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.15s ease, color 0.15s ease;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    &:hover .h2-anchor {
+      opacity: 1;
+    }
   }
 
   &.about {
@@ -26,5 +44,49 @@
 
   h2 ~ p > a {
     display: inline;
+  }
+}
+
+// Portfolio item with featured image (option 3: one image per project)
+.page.portfolio {
+  .portfolio-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5em;
+    margin: 1.5em 0;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid $lightGray;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1em;
+    }
+  }
+
+  .project-thumb {
+    flex-shrink: 0;
+    width: 140px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    @include mobile {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+
+  .portfolio-item-body {
+    flex: 1;
+    min-width: 0;
+
+    .portfolio-item-desc {
+      margin: 0 0 0.5em;
+    }
   }
 }
