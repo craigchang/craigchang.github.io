@@ -25,7 +25,7 @@ The [NATCAR Design Project](./natcar) is an annual design competition where team
 
 ## Slatepedia
 ![Slatepedia]({{'/images/slatepedia.png' | relative_url}}){: class="left" width="200"}
-[Slatepedia](https://slatepedia.herokuapp.com/) is a comprehensive, full-stack digital Encyclopedia with (mostly) complete gaming content found in the Nintendo game, The Legend of Zelda: Breath of the Wild. Built using Node.js and Express, the project features a rich set of RESTful APIs designed with a flat data structure for high performance, ensuring game data is easily accessible for any frontend integration. The full source code, including the database schema and deployment configuration, is documented in my [Github repository](https://github.com/craigchang/slatepedia).
+[Slatepedia](https://slatepedia.onrender.com/) is a comprehensive, full-stack digital Encyclopedia with (mostly) complete gaming content found in the Nintendo game, The Legend of Zelda: Breath of the Wild. Built using Node.js and Express, the project features a rich set of RESTful APIs designed with a flat data structure for high performance, ensuring game data is easily accessible for any frontend integration. The full source code, including the database schema and deployment configuration, is documented in my [Github repository](https://github.com/craigchang/slatepedia).
 {% 
     include skill-pills.html 
     skills="HTML, CSS, Javascript, React, Node.js, Bootstrap, REST API" 
