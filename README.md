@@ -35,3 +35,10 @@ Built with:
 bundle install
 bundle exec jekyll serve
 ```
+
+## Licensing
+
+This project uses a dual license:
+
+- **Source code** (layouts, includes, SASS/SCSS, JavaScript, config) — [MIT License](LICENSE); free to use, modify, and redistribute.
+- **Personal content** (images, biographical text, project descriptions) — © Craig Chang. All rights reserved; may not be copied or redistributed without permission.
