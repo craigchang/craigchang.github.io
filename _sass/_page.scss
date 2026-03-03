@@ -2,7 +2,11 @@
   h2 {
     position: relative;
     border-bottom: 5px solid $blue;
-    margin: 1em 0 15px;
+    margin: 1.5em 0 1em;
+
+    &:first-child {
+      margin: 0 0 1em;
+    }
 
     .h2-anchor {
       display: inline-block;
@@ -15,11 +19,21 @@
       &:hover {
         color: $blue;
       }
+
+      @include tablet {
+        opacity: 1
+      }
+
+      @include mobile {
+        opacity: 1
+      }
+      
     }
 
     &:hover .h2-anchor {
       opacity: 1;
     }
+
   }
 
   &.about {
@@ -36,19 +50,9 @@
   }
 }
 
-.page.projects {
-  h2 ~ div, 
-  h2 ~ p > :not(a) {
-    display: none;
-  }
-
-  h2 ~ p > a {
-    display: inline;
-  }
-}
-
 // Portfolio item with featured image (option 3: one image per project)
 .page.portfolio {
+  
   .portfolio-item {
     display: flex;
     align-items: flex-start;

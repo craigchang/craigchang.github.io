@@ -22,6 +22,11 @@
   }
 }
 
+
+//
+// IMAGE PLACEMENTS
+//
+
 img.right {
   float: right;
   margin: 0 0 1em 1em;
@@ -30,7 +35,7 @@ img.right {
 
   @include mobile {
     display: block;
-    margin: 1em auto;
+    margin: 1.5em auto;
     max-width: 200px;
     float: none;
     width: 100%;
@@ -45,7 +50,7 @@ img.left {
 
   @include mobile {
     display: block;
-    margin: 1em auto;
+    margin: 1.5em auto;
     max-width: 200px;
     float: none;
     width: 100%;
