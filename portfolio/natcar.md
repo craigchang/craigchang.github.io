@@ -20,6 +20,15 @@ The [NATCAR Design Project](https://ece.ucdavis.edu/natcar) is an annual design 
 * Control Theory: PID (Proportional-Integral-Derivative) Logic
 * Peripherals: Optical Sensor Arrays, Analog High-Torque Servos, PWM Steering Control
 
+## PID Controller
+
+![PID Controller]({{'/images/pid_controller.png' | relative_url}})
+The PID Controller acts as the car's "brain" that translates sensor data into steering commands. This closed-loop system calculates an error signal by measuring the lateral displacement between the track's center and the car's midline. The algoirthm process this signal into three distinct components:
+
+1. **Proportional (Present)**: The proportional control provides immediate corrective action based on current error. This ensures the car stays on track and reacts instantaneously to upcoming curves.
+2. **Integral (Past)**: The integral control eliminates steady-state error by accumulating past  deviations. This control ensures the car achieves high precision steering and corrects systemtic biases over time.
+3. **Derivative (Future)**: The derivative control anticipates future error by calculating the rate of change. This control provides stability and smoothness by preventing the car from overshooting during sharp turns or high-speed maneuvers.
+
 ## Microcontroller
 
 ![Microcontroller]({{'/images/microcontroller.jpg' | relative_url}}){: class="right" }
